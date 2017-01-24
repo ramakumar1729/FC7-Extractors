@@ -88,7 +88,7 @@ def main():
         # extract_fc7_visualgenome returns a dict with keys global_fc7 and region_fc7s
         global_fc7, region_fc7s = extract_fc7_visualgenome(image, regions, net, transformer) 
         output_dict[idx] = {'global_fc7': global_fc7, 'regional_fc7s': region_fc7s}
-    with open(savedir+'/VisualGenomeFC7s.json','w') as fw:
+        with open(savedir+'/'+str(idx)+'.json','w') as fw:
             json.dump(output_dict, fw)
 
 if __name__ == '__main__':
