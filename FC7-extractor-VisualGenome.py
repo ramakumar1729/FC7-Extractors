@@ -75,11 +75,11 @@ def main():
     print 'loaded model'
 
     # load VisualGenomeDriver
-    #ids = api.GetAllImageIds()
     savedir = '/usr0/home/rpasumar/Image-Captioning/VisualGenome-fc7/' 
     output_dict = dict()
     
-    ids = api.GetImageIdsInRange(startIndex=2000, endIndex=2001)
+    ids = api.GetAllImageIds()
+    #ids = api.GetImageIdsInRange(startIndex=2000, endIndex=2001)
     count = 0
     for idx in ids:
         print 'processing id: %d' %idx
