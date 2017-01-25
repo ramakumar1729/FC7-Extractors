@@ -78,7 +78,7 @@ def extract_fc7(image, obj, net, transformer):
 
 
 def get_boxes(image_id):
-    with open('/usr0/home/rpasumar/Image Captioning/Flickr30kEntities/Annotations/'+image_id+'.xml') as f:
+    with open('/usr0/home/rpasumar/Image-Captioning/Flickr30kEntities/Annotations/'+image_id+'.xml') as f:
         obj = xmltodict.parse(f.read())
 
     return obj
