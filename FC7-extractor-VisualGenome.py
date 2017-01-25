@@ -20,7 +20,7 @@ caffe.set_device(2)
 caffe.set_mode_gpu()
 
 #import VisualGenomeDriver
-sys.path.append('/usr0/home/rpasumar/Image-Captioning/VisualGenome/visual_genome_python_driver/')
+#sys.path.append('/usr0/home/rpasumar/Image-Captioning/VisualGenome/visual_genome_python_driver/')
 from src import api
 
 def load_model():
